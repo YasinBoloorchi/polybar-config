@@ -20,21 +20,18 @@
 ;background = ${xrdb:color0:#222}
 ;background = #222
 ;background = #2B063D
-;background = #1D1B1B
-;background = #dd2F343F
-background = #77000000
+background = #000000
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 ;foreground = #dfdfdf
 foreground = #FFFFFF
 foreground-alt = #555
-primary = #aaffb52a
-secondary = #cce60053
-alert = #disconnectedbd2c40
+primary = #000000
+secondary = #e60053
+alert = #bd2c40
 
-[bar/mainbar-i3]
+[bar/example]
 ;monitor = ${env:MONITOR:fallback-value}
-monitor = ${env:MONITOR:}
 width = 100%
 height = 45
 ;offset-x = -200
@@ -69,7 +66,7 @@ modules-right =  xbacklight pulseaudio xkeyboard memory cpu wlan eth battery tem
 tray-position = center
 tray-padding = 10
 ;tray-transparent = true
-;tray-background = #B3B3B3
+tray-background = #B3B3B3
 
 ;wm-restack = bspwm
 wm-restack = i3
@@ -84,115 +81,6 @@ override-redirect = false
 
 cursor-click = pointer
 cursor-scroll = ns-resize
-
-
-[bar/sidebar-1-i3]
-;monitor = ${env:MONITOR:fallback-value}
-monitor = ${env:MONITOR:}
-width = 100%
-height = 45
-;offset-x = -200
-;offset-y = 1%
-radius = 15.0
-fixed-center = true
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 5
-line-color = #f00
-
-border-size = 20
-border-color = #00000000
-
-padding-left = 5
-padding-right = 5
-
-module-margin-left = 1
-module-margin-right = 5
-
-font-0 = fixed:pixelsize=12;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
-font-3 = FontAwesome:style=Regular:pixelsize=20;1
-
-;modules-left = bspwm i3
-modules-left = i3
-modules-center = mpd
-modules-right =  xbacklight pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu menu-apps
-tray-position = center
-tray-padding = 10
-;tray-transparent = true
-;tray-background = #B3B3B3
-
-;wm-restack = bspwm
-wm-restack = i3
-
-override-redirect = false
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
-
-cursor-click = pointer
-cursor-scroll = ns-resize
-
-
-[bar/sidebar-2-i3]
-;monitor = ${env:MONITOR:fallback-value}
-monitor = ${env:MONITOR:}
-width = 100%
-height = 45
-;offset-x = -200
-;offset-y = 1%
-radius = 15.0
-fixed-center = true
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 5
-line-color = #f00
-
-border-size = 20
-border-color = #00000000
-
-padding-left = 5
-padding-right = 5
-
-module-margin-left = 1
-module-margin-right = 5
-
-font-0 = fixed:pixelsize=12;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
-font-3 = FontAwesome:style=Regular:pixelsize=20;1
-
-;modules-left = bspwm i3
-modules-left = i3
-modules-center = mpd
-modules-right =  xbacklight pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu menu-apps
-tray-position = center
-tray-padding = 10
-;tray-transparent = true
-;tray-background = #B3B3B3
-
-;wm-restack = bspwm
-wm-restack = i3
-
-override-redirect = false
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
-
-cursor-click = pointer
-cursor-scroll = ns-resize
-
 
 
 [module/xwindow]
@@ -325,7 +213,7 @@ type = internal/cpu
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #AE00FF
+format-underline = #f90000
 label = %percentage:2%% CPU 
 
 [module/memory]

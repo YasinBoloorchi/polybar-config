@@ -10,5 +10,5 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 echo "---" | tee -a /tmp/polybar1.log /tmp/polybar2.log
 #polybar bar1 >>/tmp/polybar1.log 2>&1 &
 #polybar bar2 >>/tmp/polybar2.log 2>&1 &
-polybar example >> /tmp/polbar.log 2>&1 &
+polybar mainbar-i3 >> /tmp/polbar.log 2>&1 &
 echo "Bars launched..."
